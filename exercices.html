@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices de HTML</title>
+</head>
+<body style="background-color: #00ffff;"> <!-- Couleur de fond -->
+    <!-- Titre principal centré -->
+    <h1 style="text-align: center;">Corrigé des exercices de HTML</h1>
+    
+    <!-- Ligne horizontale -->
+    <hr style="width: 80%; height: 2px;">
+    
+    <!-- Sous-titre aligné à gauche -->
+    <h2 style="text-align: left;">Exercice 2</h2>
+
+
+    <table border="1" cellpadding="6" cellspacing="6" align="center" width="80%">
+        <!-- Ligne 1 -->
+        <tr>
+            <th colspan="3">Cette cellule occupe toute la largeur du tableau.</th>
+        </tr>
+        <!-- Ligne 2 -->
+        <tr>
+            <td align="left">Alignement à gauche</td>
+            <td align="center">Texte centré</td>
+            <td align="right">Alignement à droite</td>
+        </tr>
+        <!-- Ligne 3 -->
+        <tr>
+            <td rowspan="2">Cette cellule occupe deux lignes</td>
+            <td><font color="red">Écrit en rouge</font></td>
+            <td>Je ne définis que</td>
+        </tr>
+        <!-- Ligne 4 -->
+        <tr>
+            <td colspan="2" bgcolor="yellow">Deux cellules sur cette ligne</td>
+        </tr>
+    </table>
+
+    <ul>
+        <li>Titre 1</li>
+        <li>Titre 2
+            <ul>
+                <li>Section 1</li>
+                <li> Section 2
+                    <ul>
+                        <li>Sous-section 1</li>
+                        <li>Sous-section 2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Titre 3
+            <ul>
+                <li>Section 1</li>
+                <li>Section 2</li>
+            </ul>
+        </li>
+    </ul>
+
+    <P style="font-family: Comic Sans MS';"> j'utilise la police Comic Sans MS. <br></P>
+    <p style="font-family: Arial"> j'utilise la police Arial. <br></p>
+    <p style="font-family: Verdana"> j'utilise la police Verdana.</p>
+
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form>
+        <!-- Section Vos coordonnées -->
+        <fieldset>
+            <legend><strong>Vos coordonnées</strong></legend>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="votre nom"><br><br>
+            
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="votre prénom"><br><br>
+            
+            <label for="date_naissance">Date de naissance :</label>
+            <input type="text" id="date_naissance" name="date_naissance" placeholder="jj/mm/aaaa"><br><br>
+            
+            <label for="mail">Mail :</label>
+            <input type="email" id="mail" name="mail" placeholder="votre mail"><br><br>
+            
+            <label for="site">Votre site :</label>
+            <input type="url" id="site" name="site"><br><br>
+            
+            <label for="code">Code :</label>
+            <input type="text" id="code" name="code" ><br><br>
+            
+            Genre : 
+            <input type="radio" id="homme" name="genre" value="homme">
+            <label for="homme">Homme</label>
+            <input type="radio" id="femme" name="genre" value="femme">
+            <label for="femme">Femme</label><br><br>
+            
+            <label for="pays">Pays :</label>
+            <select id="pays" name="pays">
+                <option>Votre pays</option>
+                <option>France</option>
+                <option>Belgique</option>
+                <option>Suisse</option>
+                <option>Canada</option>
+            </select>
+        </fieldset>
+        
+        <br>
+        
+        <!-- Section Vos goûts -->
+        <fieldset>
+            <legend><strong>Vos goûts</strong></legend>
+            <input type="checkbox" id="gout1" name="gouts" value="fraise">
+            <label for="gout1">Tarte aux fraises à la crème d'amandes</label><br>
+            
+            <input type="checkbox" id="gout2" name="gouts" value="prune">
+            <label for="gout2">Tarte aux prunes</label><br>
+            
+            <input type="checkbox" id="gout3" name="gouts" value="mirabelle">
+            <label for="gout3">Tarte rustique aux mirabelles de Lorraine, noisettes et miel</label><br><br>
+            
+            <textarea id="details" name="details" placeholder="Décrivez vos goûts en détail" rows="4" cols="50"></textarea>
+        </fieldset>
+        
+        <br>
+        
+        <!-- Section Envoyez nous votre photo -->
+        <fieldset>
+            <legend><strong>Envoyez nous votre photo></strong></legend>
+            <input type="file" id="photo" name="photo"><br><br>
+            <button type="reset">Effacer</button>
+            <button type="submit">Envoyer</button>
+        </fieldset>
+    </form>
+</body>
+</html>
